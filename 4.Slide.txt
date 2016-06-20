@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Slide</title>
+
+ 
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+@keyframes slide {
+    0% {
+      transform: translate3d(0px, 0px, 0px);
+    }
+    30% {
+      transform: translate3d(600px, 0px, 0px);
+    }
+    60% {
+      transform: translate3d(0px, 400px, 0px);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0px);
+    }
+}
+.slide {
+  animation: slide 4s 2;
+}
+</style>
+</head>
+ 
+<body>
+    <div class="rectangle slide"></div>
+        
+</body>
+ 
+</html>

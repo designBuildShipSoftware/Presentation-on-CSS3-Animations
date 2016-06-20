@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Perspective</title>
+
+ 
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+@keyframes rotateX {
+    50% {
+       transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+    }
+}
+.rotateX {
+  animation: rotateX 4s infinite;
+}
+div.empty-div {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    /*border: 1px solid ;*/
+    perspective: 100px;
+    -webkit-perspective: 100px;
+}
+div.blue-div {
+    padding: 100px;
+    position: absolute;
+    background-color: #A2BFCE;
+    border: 1px solid white;
+    
+}
+
+
+</style>
+</head>
+ 
+<body>
+<div class="empty-div">
+    <div class="blue-div rotateX">
+        RotateX with Perspective
+    </div>
+</div>
+
+<div class="rectangle rotateX">
+        RotateX
+    </div>
+</body>
+ 
+</html>
+

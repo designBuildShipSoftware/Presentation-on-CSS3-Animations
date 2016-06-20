@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Rotate</title>
+
+ 
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+
+@keyframes rotateY {
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+.rotateY {
+  animation-name: rotateY;
+  -webkit-animation-name: rotateY;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+</style>
+</head>
+ 
+<body>
+    <div class="rectangle rotateY"><h2>RotateY(180deg) Duration 5s Timing-Function ease-in Delay 3s Iteration-Count 1</h2></div>
+        
+</body>
+ 
+</html>

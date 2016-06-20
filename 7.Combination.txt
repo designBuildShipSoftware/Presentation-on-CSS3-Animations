@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Combination</title>
+
+ 
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+div {
+  transition: transform 2s ease-in;
+}
+div:hover {
+  transform: skew(0, 30deg);
+  }
+@keyframes combination {
+  5% {
+    background-color: green;
+  }
+  30% {
+      transform: translate3d(600px, 0px, 0px);
+  }
+  50% {
+    background-color: yellow;
+  }
+  60% {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  95% {
+    background-color: red;
+  }
+}
+
+.combination {
+  animation: combination 5s linear 1;
+  }
+
+</style>
+</head>
+ 
+<body>
+    <div class="rectangle combination ">Combination</div>
+        
+</body>
+ 
+</html>

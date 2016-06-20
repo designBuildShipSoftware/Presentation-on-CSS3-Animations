@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Rectangle</title>
+
+ 
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+
+</style>
+</head>
+ 
+<body>
+    <div class="rectangle">Rectangle</div>
+        
+</body>
+ 
+</html>

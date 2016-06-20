@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+
+<title>Transition</title>
+<style>
+.rectangle {
+    background-color: #A2BFCE;
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+}
+.body {
+    background-color: #FFF;
+    padding: 50px;
+}
+div {
+  transition: transform 2s ease-in;
+}
+div:hover {
+  transform: skew(0, 30deg);
+  }
+</style>
+</head>
+ 
+<body>
+    <div class="rectangle"><h2>Transition Skew</h2></div>
+        
+</body>
+ 
+</html>
